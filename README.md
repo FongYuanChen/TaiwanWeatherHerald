@@ -32,9 +32,10 @@
 
 ## 🖥️ 操作演示
 
-https://github.com/user-attachments/assets/306c6aae-ec2c-4a44-a2f1-140e9aed7aa1
+https://github.com/user-attachments/assets/458ae49c-42f8-4bfd-ae90-1121177c79de
 
 
 ## 📜 授權條款
 
 本專案採用 [MIT](https://github.com/FongYuanChen/TaiwanWeatherHerald/blob/main/LICENSE) 授權條款。歡迎自由使用、修改與分享！
+

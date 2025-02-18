@@ -6,7 +6,12 @@
     <Nullable>disable</Nullable>
     <ImplicitUsings>disable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\TaiwanWeatherHerald.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Images\TaiwanWeatherHerald.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\CCTVPopup\Close.png" />

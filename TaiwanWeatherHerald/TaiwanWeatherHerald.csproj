@@ -1,0 +1,195 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\CCTVPopup\Close.png" />
+    <Resource Include="Images\Day\Clear.png" />
+    <Resource Include="Images\Day\Cloudy.png" />
+    <Resource Include="Images\Day\Foggy.png" />
+    <Resource Include="Images\Day\Rainy.png" />
+    <Resource Include="Images\Day\Snowy.png" />
+    <Resource Include="Images\Day\Stormy.png" />
+    <Resource Include="Images\CCTVMap\CCTVMarker.png" />
+    <Resource Include="Images\CCTVMap\LocationMarker.png" />
+    <Resource Include="Images\Menu\Menu.png" />
+    <Resource Include="Images\Menu\Settings.png" />
+    <Resource Include="Images\Menu\WeatherForecast.png" />
+    <Resource Include="Images\SettingsView\Clear.png" />
+    <Resource Include="Images\SettingsView\EyeClosed.png" />
+    <Resource Include="Images\SettingsView\EyeOpened.png" />
+    <Resource Include="Images\SettingsView\Step1.png" />
+    <Resource Include="Images\SettingsView\Step2.png" />
+    <Resource Include="Images\WeatherMap\Next.png" />
+    <Resource Include="Images\WeatherMap\Previous.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\0.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\10.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\100.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\20.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\30.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\40.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\50.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\60.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\70.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\80.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\90.png" />
+    <Resource Include="Images\ProbabilityOfPrecipitation\NoData.png" />
+    <Resource Include="Images\Night\Clear.png" />
+    <Resource Include="Images\Night\Cloudy.png" />
+    <Resource Include="Images\Night\Foggy.png" />
+    <Resource Include="Images\Night\Rainy.png" />
+    <Resource Include="Images\Night\Snowy.png" />
+    <Resource Include="Images\Night\Stormy.png" />
+    <Resource Include="Images\RelativeHumidity\0.png" />
+    <Resource Include="Images\RelativeHumidity\1.png" />
+    <Resource Include="Images\RelativeHumidity\10.png" />
+    <Resource Include="Images\RelativeHumidity\100.png" />
+    <Resource Include="Images\RelativeHumidity\11.png" />
+    <Resource Include="Images\RelativeHumidity\12.png" />
+    <Resource Include="Images\RelativeHumidity\13.png" />
+    <Resource Include="Images\RelativeHumidity\14.png" />
+    <Resource Include="Images\RelativeHumidity\15.png" />
+    <Resource Include="Images\RelativeHumidity\16.png" />
+    <Resource Include="Images\RelativeHumidity\17.png" />
+    <Resource Include="Images\RelativeHumidity\18.png" />
+    <Resource Include="Images\RelativeHumidity\19.png" />
+    <Resource Include="Images\RelativeHumidity\2.png" />
+    <Resource Include="Images\RelativeHumidity\20.png" />
+    <Resource Include="Images\RelativeHumidity\21.png" />
+    <Resource Include="Images\RelativeHumidity\22.png" />
+    <Resource Include="Images\RelativeHumidity\23.png" />
+    <Resource Include="Images\RelativeHumidity\24.png" />
+    <Resource Include="Images\RelativeHumidity\25.png" />
+    <Resource Include="Images\RelativeHumidity\26.png" />
+    <Resource Include="Images\RelativeHumidity\27.png" />
+    <Resource Include="Images\RelativeHumidity\28.png" />
+    <Resource Include="Images\RelativeHumidity\29.png" />
+    <Resource Include="Images\RelativeHumidity\3.png" />
+    <Resource Include="Images\RelativeHumidity\30.png" />
+    <Resource Include="Images\RelativeHumidity\31.png" />
+    <Resource Include="Images\RelativeHumidity\32.png" />
+    <Resource Include="Images\RelativeHumidity\33.png" />
+    <Resource Include="Images\RelativeHumidity\34.png" />
+    <Resource Include="Images\RelativeHumidity\35.png" />
+    <Resource Include="Images\RelativeHumidity\36.png" />
+    <Resource Include="Images\RelativeHumidity\37.png" />
+    <Resource Include="Images\RelativeHumidity\38.png" />
+    <Resource Include="Images\RelativeHumidity\39.png" />
+    <Resource Include="Images\RelativeHumidity\4.png" />
+    <Resource Include="Images\RelativeHumidity\40.png" />
+    <Resource Include="Images\RelativeHumidity\41.png" />
+    <Resource Include="Images\RelativeHumidity\42.png" />
+    <Resource Include="Images\RelativeHumidity\43.png" />
+    <Resource Include="Images\RelativeHumidity\44.png" />
+    <Resource Include="Images\RelativeHumidity\45.png" />
+    <Resource Include="Images\RelativeHumidity\46.png" />
+    <Resource Include="Images\RelativeHumidity\47.png" />
+    <Resource Include="Images\RelativeHumidity\48.png" />
+    <Resource Include="Images\RelativeHumidity\49.png" />
+    <Resource Include="Images\RelativeHumidity\5.png" />
+    <Resource Include="Images\RelativeHumidity\50.png" />
+    <Resource Include="Images\RelativeHumidity\51.png" />
+    <Resource Include="Images\RelativeHumidity\52.png" />
+    <Resource Include="Images\RelativeHumidity\53.png" />
+    <Resource Include="Images\RelativeHumidity\54.png" />
+    <Resource Include="Images\RelativeHumidity\55.png" />
+    <Resource Include="Images\RelativeHumidity\56.png" />
+    <Resource Include="Images\RelativeHumidity\57.png" />
+    <Resource Include="Images\RelativeHumidity\58.png" />
+    <Resource Include="Images\RelativeHumidity\59.png" />
+    <Resource Include="Images\RelativeHumidity\6.png" />
+    <Resource Include="Images\RelativeHumidity\60.png" />
+    <Resource Include="Images\RelativeHumidity\61.png" />
+    <Resource Include="Images\RelativeHumidity\62.png" />
+    <Resource Include="Images\RelativeHumidity\63.png" />
+    <Resource Include="Images\RelativeHumidity\64.png" />
+    <Resource Include="Images\RelativeHumidity\65.png" />
+    <Resource Include="Images\RelativeHumidity\66.png" />
+    <Resource Include="Images\RelativeHumidity\67.png" />
+    <Resource Include="Images\RelativeHumidity\68.png" />
+    <Resource Include="Images\RelativeHumidity\69.png" />
+    <Resource Include="Images\RelativeHumidity\7.png" />
+    <Resource Include="Images\RelativeHumidity\70.png" />
+    <Resource Include="Images\RelativeHumidity\71.png" />
+    <Resource Include="Images\RelativeHumidity\72.png" />
+    <Resource Include="Images\RelativeHumidity\73.png" />
+    <Resource Include="Images\RelativeHumidity\74.png" />
+    <Resource Include="Images\RelativeHumidity\75.png" />
+    <Resource Include="Images\RelativeHumidity\76.png" />
+    <Resource Include="Images\RelativeHumidity\77.png" />
+    <Resource Include="Images\RelativeHumidity\78.png" />
+    <Resource Include="Images\RelativeHumidity\79.png" />
+    <Resource Include="Images\RelativeHumidity\8.png" />
+    <Resource Include="Images\RelativeHumidity\80.png" />
+    <Resource Include="Images\RelativeHumidity\81.png" />
+    <Resource Include="Images\RelativeHumidity\82.png" />
+    <Resource Include="Images\RelativeHumidity\83.png" />
+    <Resource Include="Images\RelativeHumidity\84.png" />
+    <Resource Include="Images\RelativeHumidity\85.png" />
+    <Resource Include="Images\RelativeHumidity\86.png" />
+    <Resource Include="Images\RelativeHumidity\87.png" />
+    <Resource Include="Images\RelativeHumidity\88.png" />
+    <Resource Include="Images\RelativeHumidity\89.png" />
+    <Resource Include="Images\RelativeHumidity\9.png" />
+    <Resource Include="Images\RelativeHumidity\90.png" />
+    <Resource Include="Images\RelativeHumidity\91.png" />
+    <Resource Include="Images\RelativeHumidity\92.png" />
+    <Resource Include="Images\RelativeHumidity\93.png" />
+    <Resource Include="Images\RelativeHumidity\94.png" />
+    <Resource Include="Images\RelativeHumidity\95.png" />
+    <Resource Include="Images\RelativeHumidity\96.png" />
+    <Resource Include="Images\RelativeHumidity\97.png" />
+    <Resource Include="Images\RelativeHumidity\98.png" />
+    <Resource Include="Images\RelativeHumidity\99.png" />
+    <Resource Include="Images\RelativeHumidity\NoData.png" />
+    <Resource Include="Images\CCTVPopup\Reload.png" />
+    <Resource Include="Images\TaiwanWeatherHerald.png" />
+    <Resource Include="Images\UVIndex\1.png" />
+    <Resource Include="Images\UVIndex\10.png" />
+    <Resource Include="Images\UVIndex\11.png" />
+    <Resource Include="Images\UVIndex\2.png" />
+    <Resource Include="Images\UVIndex\3.png" />
+    <Resource Include="Images\UVIndex\4.png" />
+    <Resource Include="Images\UVIndex\5.png" />
+    <Resource Include="Images\UVIndex\6.png" />
+    <Resource Include="Images\UVIndex\7.png" />
+    <Resource Include="Images\UVIndex\8.png" />
+    <Resource Include="Images\UVIndex\9.png" />
+    <Resource Include="Images\UVIndex\NoData.png" />
+    <Resource Include="Images\WindBeaufort\0.png" />
+    <Resource Include="Images\WindBeaufort\1.png" />
+    <Resource Include="Images\WindBeaufort\10.png" />
+    <Resource Include="Images\WindBeaufort\11.png" />
+    <Resource Include="Images\WindBeaufort\12.png" />
+    <Resource Include="Images\WindBeaufort\2.png" />
+    <Resource Include="Images\WindBeaufort\3.png" />
+    <Resource Include="Images\WindBeaufort\4.png" />
+    <Resource Include="Images\WindBeaufort\5.png" />
+    <Resource Include="Images\WindBeaufort\6.png" />
+    <Resource Include="Images\WindBeaufort\7.png" />
+    <Resource Include="Images\WindBeaufort\8.png" />
+    <Resource Include="Images\WindBeaufort\9.png" />
+    <Resource Include="Images\WindBeaufort\NoData.png" />
+    <Resource Include="Images\WindDirection\East.png" />
+    <Resource Include="Images\WindDirection\North.png" />
+    <Resource Include="Images\WindDirection\Northeast.png" />
+    <Resource Include="Images\WindDirection\Northwest.png" />
+    <Resource Include="Images\WindDirection\South.png" />
+    <Resource Include="Images\WindDirection\Southeast.png" />
+    <Resource Include="Images\WindDirection\Southwest.png" />
+    <Resource Include="Images\WindDirection\West.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.72" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3065.39" />
+  </ItemGroup>
+
+</Project>

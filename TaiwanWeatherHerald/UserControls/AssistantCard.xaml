@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="TaiwanWeatherHerald.UserControls.AssistantCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TaiwanWeatherHerald.UserControls"
+             mc:Ignorable="d" 
+             x:Name="assistantCard"
+             Width="690"
+             MaxHeight="390">
+    <Border Padding="10" BorderThickness="1" CornerRadius="10">
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="Background" Value="transparent"/>
+                <Setter Property="BorderBrush" Value="#F1F1F1"/>
+            </Style>
+        </Border.Style>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"
+                       Foreground="#FF007ACC"
+                       FontSize="16"
+                       FontWeight="SemiBold"
+                       FontStyle="Italic"
+                       TextDecorations="Underline"
+                       TextWrapping="Wrap"
+                       TextAlignment="Justify"
+                       Text="{Binding Path=Title, ElementName=assistantCard}"/>
+            <ScrollViewer Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Auto">
+                <TextBlock Foreground="#F1F1F1"
+                           FontSize="14"
+                           TextWrapping="Wrap"
+                           TextAlignment="Justify"
+                           LineHeight="30"
+                           Text="{Binding Path=Content, ElementName=assistantCard}"/>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</UserControl>

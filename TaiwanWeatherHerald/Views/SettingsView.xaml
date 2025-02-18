@@ -1,0 +1,116 @@
+﻿<UserControl x:Class="TaiwanWeatherHerald.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TaiwanWeatherHerald.Views"
+             mc:Ignorable="d">
+    <Grid Background="#1E1E1E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <TextBlock Foreground="#F1F1F1"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Text="步驟 1："/>
+            <TextBlock Foreground="#F1F1F1">
+                    連結 
+                    <Hyperlink NavigateUri="https://opendata.cwa.gov.tw/index"
+                               RequestNavigate="Hyperlink_RequestNavigate"
+                               Foreground="#007ACC"
+                               TextDecorations="Underline">
+                        中央氣象署開放資料平臺
+                    </Hyperlink> 
+                    ，點選右上方「登入／註冊」
+            </TextBlock>
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Image HorizontalAlignment="Left"
+                   Source="/Images/SettingsView/Step1.png"
+                   MouseEnter="Step1Image_MouseEnter"
+                   MouseLeave="Step1Image_MouseLeave"/>
+            <Popup x:Name="Step1Popup" Placement="Mouse" StaysOpen="False" AllowsTransparency="True" PopupAnimation="Fade">
+                <Border BorderBrush="#434346" BorderThickness="1">
+                    <Image Height="500"
+                           Source="/Images/SettingsView/Step1.png"/>
+                </Border>
+            </Popup>
+        </Grid>
+        <StackPanel Grid.Column="1" Grid.Row="5">
+            <TextBlock Foreground="#F1F1F1"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Text="步驟 2："/>
+            <TextBlock Foreground="#F1F1F1"
+                       Text="登入後，點擊「取得授權碼」，獲取您專屬的授權碼"/>
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.Row="7">
+            <Image HorizontalAlignment="Left"
+                   Source="/Images/SettingsView/Step2.png"
+                   MouseEnter="Step2Image_MouseEnter"
+                   MouseLeave="Step2Image_MouseLeave"/>
+            <Popup x:Name="Step2Popup" Placement="Mouse" StaysOpen="False" AllowsTransparency="True" PopupAnimation="Fade">
+                <Border BorderBrush="#434346" BorderThickness="1">
+                    <Image Height="500"
+                           Source="/Images/SettingsView/Step2.png"/>
+                </Border>
+            </Popup>
+        </Grid>
+        <StackPanel Grid.Column="1" Grid.Row="9">
+            <TextBlock Foreground="#F1F1F1"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Text="步驟 3："/>
+            <TextBlock Foreground="#F1F1F1"
+                       Text="在下方填入您的授權碼："/>
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.Row="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="35"/>
+            </Grid.ColumnDefinitions>
+            <PasswordBox x:Name="ApiKeyPasswordBox"
+                         Height="25"
+                         Background="#333337"
+                         BorderBrush="#434346"
+                         Foreground="#F1F1F1"
+                         SelectionBrush="#007ACC"
+                         VerticalContentAlignment="Center"
+                         PasswordChanged="ApiKeyPasswordBox_PasswordChanged"/>
+            <TextBox x:Name="ApiKeyTextBox"
+                     Height="25"
+                     Background="#333337"
+                     BorderBrush="#434346"
+                     Foreground="#F1F1F1"
+                     SelectionBrush="#007ACC"
+                     VerticalContentAlignment="Center"
+                     Visibility="Collapsed"/>
+            <Button Grid.Column="2" Background="Transparent" BorderThickness="0" Click="EyeIcon_Click">
+                <Image x:Name="EyeIcon"
+                       Source="/Images/SettingsView/EyeOpened.png"/>
+            </Button>
+            <Button Grid.Column="4" Background="Transparent" BorderThickness="0" Click="ClearIcon_Click">
+                <Image Source="/Images/SettingsView/Clear.png"/>
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>
